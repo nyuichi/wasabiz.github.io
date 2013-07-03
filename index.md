@@ -4,4 +4,4 @@ layout: index
 
 ## posts
 
-- [example](example.html)
+- [example](2013/07/03/example.html)
