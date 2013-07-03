@@ -4,4 +4,6 @@ layout: index
 
 ## posts
 
-- [example](2013/07/03/example.html)
+{% for post in site.posts %}
+- {{ post.date | date: "%d %b %Y" }} [{{ post.title }}]({{ post.url }})
+{% endfor %}
