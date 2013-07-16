@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Emacs on Windows��Ctrl + �EAlt + key�������Ȃ�
+title: Emacs on WindowsでCtrl + 右Alt + keyが効かない
 ---
 
-[EmacsWiki: Alt Gr Key](www.emacswiki.org/emacs/AltGrKey)
+[EmacsWiki: Alt Gr Key](http://www.emacswiki.org/emacs/AltGrKey)
 
-Windows��GNU Emacs���C���X�g�[��������F�X�������Ă����Ctrl+�Ealt+Key�������Ȃ����Ƃ𔭌��B
-Ctrl+��Alt���Ɩ��Ȃ���ɉEAlt+key�ł����͂Ȃ������B�ŏ���HHK���L�̖�肩�Ǝv���Ă��ɂ傲�ɂ傷��������Ȃ炸�B
-���낢�뒲�ׂĂ����Ƃ�����Wiki�ɂ��ǂ蒅�����B
+WindowsにGNU Emacsをインストールした後色々いじっているとCtrl+右alt+Keyが効かないことを発見。
+Ctrl+左Altだと問題ない上に右Alt+keyでも問題はなく動く。最初はHHK特有の問題かと思ってごにょごにょするも解決ならず。
+いろいろ調べていたところ上のWikiにたどり着いた。
 
-�H��Windows��Ctrl+AltGr+key�̃C�x���g�������������Ă��܂��Ƃ̂��Ƃ�OS���x���̖��Ƃ̂��ƁB
-���ǁA�L�[�����}�b�v����Ƃ����ŏI��i�őΏ����邵���Ȃ��悤�������̂ł��̕��@�ŉ����B
-���}�b�v�ɂ�SharpKeys�Ƃ����\�t�g���g�����B
+曰くWindowsがCtrl+AltGr+keyのイベントを持ち逃げしてしまうとのことでOSレベルの問題とのこと。
+結局、キーをリマップするという最終手段で対処するしかないようだったのでその方法で解決。
+リマップにはSharpKeysというソフトを使った。
 
 [SharpKeys - Home](http://sharpkeys.codeplex.com/)
 
-Right Alt��Left Alt�Ƀ��}�b�v���čċN���B���Ȃ��������B
+Right AltをLeft Altにリマップして再起動。問題なく動いた。
